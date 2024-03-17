@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <script>
+      function redirectToLogin() {
+        window.location.href = "../login.html";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <form onsubmit="redirectToLogin(); return false;">
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" placeholder="Enter your first name" required><br>
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" placeholder="Enter your last name" required><br>
+        <label for="birthdate">Birth Date</label>
+        <input type="date" name="birthdate" required><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Enter your email" required><br>
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="Enter a username" required><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Enter a password" required><br>
+        <input type="submit" name="signup" value="Sign Up">
+      </form>
+    </div>
+  </body>
+</html>

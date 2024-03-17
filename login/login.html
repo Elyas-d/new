@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script>
+      function redirectToIndex() {
+        window.location.href = "../index.htm";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <form onsubmit="redirectToIndex(); return false;">
+        <label for="name">Username</label>
+        <input type="text" name="username" placeholder="Email or username" required><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Enter your password"><br>
+        <input type="submit" name="login" value="Login">
+      </form>
+      <p><a href="./signup/signup.html">Create a new account</a></p>
+    </div>
+  </body>
+</html>
