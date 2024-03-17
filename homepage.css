@@ -1,3 +1,5 @@
 .body{
     color: chartreuse;
+    background-color: black;
+    align-self: stretch;
 }
